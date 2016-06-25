@@ -1,0 +1,34 @@
+## File I/O ##
+
+$ 3.2 File Descriptors (fd.)
+
+	def: A file descriptor is a non-neg. int.
+		1) To the kernel, all open files are refferred to by fd's. 
+		2) When opening an existing file or creating a new file, the kernel rets. a fd.
+			 to the process.
+		3) When we want to read or write a file, we id. the file with the fd. that was
+			 returned by funcs 'open' or 'creat' as arg. to funcs 'read' or 'write'.
+
+
+	**UNIX uses fd 0 with std input of a process, fd1 with std output, and fd2 with
+		the std error.
+
+
+$ 3.3 open and openat functions
+
+	def: A file is opened or created by either calling the open or openat func.
+
+	- the fd retd. by open/openat is guaranteed oto be the lowest unused fd.
+	- the diff b/w relative/absolute pathname is that rel. does not begin with
+		(/). Rel. specifies loc. relative to the curr. working dir.
+	- the diff. b/w open/openat is that openat has the fd parameter. there are
+		three possibilities:
+		1) The path param. specifies absolute pathname. In this case, the fd.
+			 param. is ignored and openat behaves like open.
+		2) The path param. specifies relative pathname and fd param. specifies
+			 the starting loc. in the file sys. where the rel. pathname is. The
+			 fd. param. is obtained by opening the dir. where the rel. pathname
+			 is to be evaluated.
+		3) The path param. specifies rel. pathname and the fd. param. has a 
+			 special value AT_FDCWD. In this case, the pathname is eval. @
+			 the curr. working dir. and openat behaves like open.
