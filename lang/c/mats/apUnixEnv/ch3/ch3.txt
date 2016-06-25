@@ -1,5 +1,10 @@
 ## File I/O ##
 
+Kernel - A computer prog. that communicates with the central core of a comp's OS.
+				 It has complete control over everying that happens in the sys. It is the
+				 first program loaded on startup; input/output, instructions for the CPU.
+				 It also manages mem.
+
 $ 3.2 File Descriptors (fd.)
 
 	def: A file descriptor is a non-neg. int.
@@ -17,6 +22,7 @@ $ 3.2 File Descriptors (fd.)
 $ 3.3 open and openat functions
 
 	def: A file is opened or created by either calling the open or openat func.
+	ret: Both ret. a fd. if okay, or -1 on error.
 
 	- the fd retd. by open/openat is guaranteed oto be the lowest unused fd.
 	- the diff b/w relative/absolute pathname is that rel. does not begin with
@@ -32,3 +38,37 @@ $ 3.3 open and openat functions
 		3) The path param. specifies rel. pathname and the fd. param. has a 
 			 special value AT_FDCWD. In this case, the pathname is eval. @
 			 the curr. working dir. and openat behaves like open.
+	- pg.65: notes on filename/pathname trunc.
+
+
+$ 3.4 creat func
+
+	def: A new file can also be created by calling the creat func.
+	ret: fd. opened for WRITE-ONLY if ok, -1 on error.
+
+	**By using creat, the file is ONLY opened for writing.
+
+
+$ 3.5 close func
+
+	def: An open file is closed with the close func.
+	ret: 0 if ok, -1 on error.
+
+	- Closing a file also releases any record locks that the process may have
+		on the file.
+	- When a process terminates, all of its open files are closed by the kernel.
+
+
+$ 3.6 lseek func
+
+	def: An open file's offset can be set with lseek.
+	ret: new file offset if ok, -1 on error.
+
+	- Every open file has a "curr. file offset". This number is normally a non-
+		negative int. that measures the num. of bytes from the begin. of file.
+	- Read and write ops. normally start at the CFO and cause the offset to be
+		increm. by the num. of bytes read or written.
+	- By default, offset is init. to 0 when file is opened (unless O_APPEND
+		option is specified).
+
+		
