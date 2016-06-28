@@ -8,8 +8,84 @@ $ 5.2 Streams and FILE Objects
 	def: in ch.3, all IO routines centered on fd's. With the std. IO
 			 lib, it centers on streams. When we open/create a file wuth
 			 the std. IO lib, we associate a stream with the file.
-
+	
+	funcs:
+	1. fwide
+		 def: sets a stream's orientation
+		 ret: pos. int if stream is wide oriented, neg. if stream is
+					byte oriented, or 0 if stream has no orientation.
+		 nts: 
+					- will not change stream orientation if its already set.
+					- no error stream.
 
 	- with the ASCII char set, a char is rep'd. by a single byte.
+		International char sets, a char is rep'd. by > one byte.
+		Stdio can work with both these sets.
+
+	- a stream's orientation det's. whether these chars that are rd
+		and wrt'n are single or multibytes ("wide").
 
 
+$ 5.3 Standard input, standard output, and standard error
+	def: three streams predefined and automatically available to
+			 a process.
+	
+	- these streams refer to the same files as the fd's STDIN_FILENO,
+		STDOUT_FILENO, and STDERR_FILENO.
+
+
+$ 5.4 Bufferring
+	def: goal is to minimize num. of rd and wrt calls.
+	nts: the one aspect of stdio that is confusing is its buffering.
+
+	terms:
+	1. flush
+		 def: wrt'ing of a stdio buffer.
+		 nts: 2 meanings
+					1) for stdio lib, its wrt'ing out the contents of a buffer,
+						 which may be partially filled.
+					2) for terminal driver, (tcflush func in ch18) it means to
+						 discard data that's already stored in the buffer.
+
+	- 3 types of buffering provided:
+		1. Fully buffered.
+			 def: actual io happens when the stdio buffer is filled.
+
+	 	2. Line buffered.
+			 def: stdio lib performs io when a \n is encountered on input
+						or output. 
+
+			 nts:
+						- This allows us to output a single char at a time, knowing 
+							that actual io will only happen when we finish writing
+							each line.
+						- Typically used on a stream on the terminal--std input,
+							std output, for example.
+						- 2 caveats
+							1) size of buffer stdio uses to collect ea. ln. is fixed;
+								 so io might happen when buffer is full before writing
+								 a new line.
+							2) whenever input is requested through stdio lib from
+								 either:
+								 		a) an unbuffered stream
+								 		b) a line buffered stream,
+								 ALL line buffered output streams are flushed.
+
+			3. Unbuffered.
+				 def: stdio lib dn buffer the char's.
+				 nts:
+				 			- ex: if we write 15 char's with stdio func fputs, we expect
+								output asap.
+							- ex: the std error stream is normally unbuffered. When any
+								err msgs occur, they are displayed asap, regardless of
+								having a new line.
+
+	- ISO C req's foll. buffer characterisics:
+		-> std input and output are fully buffered, only if they do not refer to
+			 an interactive device.
+		-> std err is never fully buffered. 
+
+	- most impl. default to the foll types of buffering:
+		-> std error is always unbuffered.
+		-> all other streams are line buffered if they refer to a terminal device;
+			 otherwise they are fully buffered.
