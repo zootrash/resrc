@@ -37,15 +37,23 @@ $ 5.3 Standard input, standard output, and standard error
 $ 5.4 Bufferring
 	def: goal is to minimize num. of rd and wrt calls.
 	nts: the one aspect of stdio that is confusing is its buffering.
+	
+	funcs:
+		1. fflush
+			 def: we can force a stream to be flushed.
+			 ret: 0 if ok, EOF on err.
+			 nts: any unwritten data for the stream will be passed to
+						the kernel. If fp (param) is null, fflush causes all
+						output streams to be flushed.
 
 	terms:
-	1. flush
-		 def: wrt'ing of a stdio buffer.
-		 nts: 2 meanings
-					1) for stdio lib, its wrt'ing out the contents of a buffer,
-						 which may be partially filled.
-					2) for terminal driver, (tcflush func in ch18) it means to
-						 discard data that's already stored in the buffer.
+		1. flush
+			def: wrt'ing of a stdio buffer.
+			nts: 2 meanings
+				1) for stdio lib, its wrt'ing out the contents of a buffer,
+					 which may be partially filled.
+				2) for terminal driver, (tcflush func in ch18) it means to
+					 discard data that's already stored in the buffer.
 
 	- 3 types of buffering provided:
 		1. Fully buffered.
@@ -89,3 +97,40 @@ $ 5.4 Bufferring
 		-> std error is always unbuffered.
 		-> all other streams are line buffered if they refer to a terminal device;
 			 otherwise they are fully buffered.
+
+	- can change the defaults with funcs setbuf and setvbuf. These funcs must be
+		called AFTER stream has been opened, but BEFORE any other oper. is
+		performed on the stream.
+		-> more on these funcs pg. 147
+
+
+$ Opening a stream
+
+	- funcs
+		1. fopen, freopen, fdopen
+			 def: funcs that open a stdio stream.
+			 ret: fp if ok, null on err.
+			 dif:
+			 			1. fopen func opens a specified file.
+						2. freopen opens specified file on a specified stream, closing the
+							 stream first if it is already open. If the stream had an orient,
+							 freopen clears it. Typically used to open a specified file as
+							 one of the predef streams: std input, std output, or std err.
+						3. fdopen takes an exisiting fd, and associates a stdio stream with
+							 the descriptor.
+
+		2. fclose
+			 def: an open stream is closed by calling fclose.
+			 ret: 0 if ok, EOF on error
+			 nts:
+						- any buffered output data is flushed before file is closed. Any input
+							data that may be buffered is discarded.
+						- If the stdio lib had auto'ly allo'ed a buffer for the stream, that
+							buffer is released.
+						- when a process terminates normally, all stdio streams with unwritten
+							buffered data are flushed and all opens stdio streams are closed.
+
+
+$ 5.6 Reading and writing a stream
+
+LO: pg.150/177
