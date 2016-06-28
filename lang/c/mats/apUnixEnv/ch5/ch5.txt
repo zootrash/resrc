@@ -133,4 +133,4 @@ $ Opening a stream
 
 $ 5.6 Reading and writing a stream
 
-LO: pg.150/177
+LO: pg.150/175
