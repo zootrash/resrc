@@ -1,0 +1,15 @@
+## Standard I/O Library ##
+
+$ 5.1 Introduction
+	def: standard IO lib. handles things like buffer allocation
+
+
+$ 5.2 Streams and FILE Objects
+	def: in ch.3, all IO routines centered on fd's. With the std. IO
+			 lib, it centers on streams. When we open/create a file wuth
+			 the std. IO lib, we associate a stream with the file.
+
+
+	- with the ASCII char set, a char is rep'd. by a single byte.
+
+
