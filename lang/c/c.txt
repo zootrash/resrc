@@ -4,4 +4,6 @@ http://stackoverflow.com/questions/1963780/when-should-i-use-malloc-in-c-and-whe
 str.append1
 http://stackoverflow.com/questions/12939370/c-appending-char-to-char
 
+ptr subtr.
+http://stackoverflow.com/questions/3238482/pointer-subtraction-confusion
 
