@@ -104,7 +104,7 @@ $ 5.4 Bufferring
 		-> more on these funcs pg. 147
 
 
-$ Opening a stream
+$ 5.5 Opening a stream
 
 	- funcs
 		1. fopen, freopen, fdopen
@@ -123,11 +123,13 @@ $ Opening a stream
 			 def: an open stream is closed by calling fclose.
 			 ret: 0 if ok, EOF on error
 			 nts:
-						- any buffered output data is flushed before file is closed. Any input
+						- any buffered output data is flushed before file is closed. Any 
+							input
 							data that may be buffered is discarded.
 						- If the stdio lib had auto'ly allo'ed a buffer for the stream, that
 							buffer is released.
-						- when a process terminates normally, all stdio streams with unwritten
+						- when a process terminates normally, all stdio streams with 
+							unwritten
 							buffered data are flushed and all opens stdio streams are closed.
 
 
