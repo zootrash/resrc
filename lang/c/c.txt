@@ -9,3 +9,9 @@ http://stackoverflow.com/questions/3238482/pointer-subtraction-confusion
 
 malloc + array
 https://www.cs.swarthmore.edu/~newhall/unixhelp/C_arrays.html
+
+-> vs .
+http://cboard.cprogramming.com/c-programming/65666-invalid-type-argument-%60.html
+https://discover.cs.ucsb.edu/commonerrors/error/2021.xml
+
+
