@@ -16,3 +16,6 @@ https://discover.cs.ucsb.edu/commonerrors/error/2021.xml
 
 fwrite
 http://stackoverflow.com/questions/2695934/fwrite-write-an-integer
+
+reading file chars
+http://stackoverflow.com/questions/4823177/reading-a-file-character-by-character-in-c
