@@ -19,3 +19,10 @@ http://stackoverflow.com/questions/2695934/fwrite-write-an-integer
 
 reading file chars
 http://stackoverflow.com/questions/4823177/reading-a-file-character-by-character-in-c
+
+writing structs to binary files
+http://stackoverflow.com/questions/16997141/writing-structs-to-a-file-in-c
+https://www.codingunit.com/c-tutorial-binary-file-io
+http://stackoverflow.com/questions/4384309/reading-writing-a-structure-into-a-binary-file
+https://www.quora.com/How-do-I-write-a-C-struct-to-a-binary-file-and-how-do-I-read-and-display-it-using-fwrite
+
