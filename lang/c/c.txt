@@ -28,3 +28,8 @@ https://www.quora.com/How-do-I-write-a-C-struct-to-a-binary-file-and-how-do-I-re
 
 scanset/user input
 http://stackoverflow.com/questions/6282198/reading-string-from-input-with-space-character
+
+switch stmt's with strings
+http://stackoverflow.com/questions/9856310/switch-statement-with-strings
+
+
