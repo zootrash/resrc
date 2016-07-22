@@ -1,2 +1,6 @@
 hostname
 http://www.cyberciti.biz/faq/linux-change-hostname/
+
+scp-ex
+scp -P 922 -r vicentd@linux.cs.wwu.edu:~/Documents/curr/cs352/asgn1/ .
+
