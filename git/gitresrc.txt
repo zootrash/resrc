@@ -28,3 +28,7 @@ http://stackoverflow.com/questions/33356846/cannot-resolve-github-conflict-in-pr
 update all changes (add and rm):
 http://stackoverflow.com/questions/6004453/how-to-remove-multiple-deleted-files-in-git-repository
 
+no tracking info
+http://stackoverflow.com/questions/32056324/git-pull-there-is-no-tracking-information-for-the-current-branch
+
+
