@@ -32,4 +32,7 @@ http://stackoverflow.com/questions/6282198/reading-string-from-input-with-space-
 switch stmt's with strings
 http://stackoverflow.com/questions/9856310/switch-statement-with-strings
 
+strcpy segfaults
+http://stackoverflow.com/questions/19649217/i-have-a-segmentation-fault-core-dumped-when-using-strcpy-malloc-and-struct
+
 

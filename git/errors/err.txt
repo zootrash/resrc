@@ -1,0 +1,4 @@
+remote origin already exists:
+http://stackoverflow.com/questions/10904339/github-fatal-remote-origin-already-exists
+
+
