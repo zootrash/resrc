@@ -1,0 +1,4 @@
+parameter expansion
+http://stackoverflow.com/questions/2829613/how-do-you-tell-if-a-string-contains-another-string-in-unix-shell-scripting
+
+
