@@ -6,4 +6,6 @@ http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_
 single/dbl brackets
 http://mywiki.wooledge.org/BashFAQ/031
 
+http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-parentheses-curly-braces
+
 
