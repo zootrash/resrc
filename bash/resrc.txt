@@ -9,3 +9,8 @@ http://mywiki.wooledge.org/BashFAQ/031
 http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-parentheses-curly-braces
 
 
+rand num gen
+http://unix.stackexchange.com/questions/140750/generate-random-numbers-in-specific-range
+
+
+
