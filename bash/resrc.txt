@@ -1,36 +1,39 @@
-parameter expansion
+# parameter expansion
 http://stackoverflow.com/questions/2829613/how-do-you-tell-if-a-string-contains-another-string-in-unix-shell-scripting
 
 http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_06_02
 
 
-pattern matching
+# pattern matching
 https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html
 
 
-single/dbl brackets
+# single/dbl brackets
 http://mywiki.wooledge.org/BashFAQ/031
 
 http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-parentheses-curly-braces
 
 
-rand num gen
+# rand num gen
 http://unix.stackexchange.com/questions/140750/generate-random-numbers-in-specific-range
 
 https://www.eduonix.com/blog/shell-scripting/generating-random-numbers-in-linux-shell-scripting/
 
 
-diff b/w single and double quotes
+# diff b/w single and double quotes
 http://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash
 
 
-bash regular expr
+# bash regular expr
 http://stackoverflow.com/questions/19737675/shell-script-how-to-extract-string-using-regular-expressions
 
 http://www.bsd.org/regexintro.html
 
 -> =~ clarification
 http://mywiki.wooledge.org/BashGuide/Patterns
+
+# string manip
+http://tldp.org/LDP/abs/html/string-manipulation.html
 
 
 
