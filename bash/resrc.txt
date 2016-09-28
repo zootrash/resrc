@@ -26,4 +26,8 @@ http://stackoverflow.com/questions/19737675/shell-script-how-to-extract-string-u
 
 http://www.bsd.org/regexintro.html
 
+-> =~ clarification
+http://mywiki.wooledge.org/BashGuide/Patterns
+
+
 
