@@ -17,6 +17,9 @@ http://stackoverflow.com/questions/2188199/how-to-use-double-or-single-bracket-p
 rand num gen
 http://unix.stackexchange.com/questions/140750/generate-random-numbers-in-specific-range
 
+https://www.eduonix.com/blog/shell-scripting/generating-random-numbers-in-linux-shell-scripting/
+
+
 diff b/w single and double quotes
 http://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash
 
