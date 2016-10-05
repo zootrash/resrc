@@ -2,4 +2,10 @@ grub rescue!
 
 http://askubuntu.com/questions/493826/grub-rescue-problem-after-deleting-ubuntu-partition
 
+http://askubuntu.com/questions/351706/where-should-i-install-grub
+
+http://askubuntu.com/questions/184155/where-to-install-grub
+
+
+
 
