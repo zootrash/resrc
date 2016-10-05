@@ -1,0 +1,5 @@
+grub rescue!
+
+http://askubuntu.com/questions/493826/grub-rescue-problem-after-deleting-ubuntu-partition
+
+
