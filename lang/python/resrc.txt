@@ -1,4 +1,6 @@
 date format:
 http://stackoverflow.com/questions/311627/how-to-print-date-in-a-regular-format-in-python
 
+http://www.cyberciti.biz/faq/howto-get-current-date-time-in-python/
+
 
