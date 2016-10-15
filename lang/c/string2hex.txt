@@ -1,0 +1,10 @@
+string2hex
+
+	char *hex = "55";
+	printf("0x55 is: %s\n", hex);
+
+	int myint = (int)strtol(hex, NULL, 16);
+	printf("my int is%c\n", myint);
+
+	char pbyte = 0x55;
+	printf("55 is: %c\n", pbyte);
