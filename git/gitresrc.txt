@@ -31,4 +31,7 @@ http://stackoverflow.com/questions/6004453/how-to-remove-multiple-deleted-files-
 no tracking info
 http://stackoverflow.com/questions/32056324/git-pull-there-is-no-tracking-information-for-the-current-branch
 
+branch/checkout/merge
+https://www.atlassian.com/git/tutorials/using-branches/git-merge
+
 
