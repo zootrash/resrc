@@ -34,4 +34,7 @@ http://stackoverflow.com/questions/32056324/git-pull-there-is-no-tracking-inform
 branch/checkout/merge
 https://www.atlassian.com/git/tutorials/using-branches/git-merge
 
+permenantly delete remote/local branch and sync
+http://stackoverflow.com/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely
+
 
