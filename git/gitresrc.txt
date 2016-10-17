@@ -37,4 +37,7 @@ https://www.atlassian.com/git/tutorials/using-branches/git-merge
 permenantly delete remote/local branch and sync
 http://stackoverflow.com/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely
 
+diff remote/local branch
+http://stackoverflow.com/questions/16408300/what-is-the-differences-between-local-branch-local-tracking-branch-remote-bran
+
 
