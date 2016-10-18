@@ -1,0 +1,4 @@
+int to char
+http://stackoverflow.com/questions/2279379/how-to-convert-integer-to-char-in-c
+
+
