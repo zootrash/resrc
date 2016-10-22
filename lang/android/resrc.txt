@@ -1,0 +1,4 @@
+building a simple ui
+https://developer.android.com/training/basics/firstapp/building-ui.html#TextInput
+
+
