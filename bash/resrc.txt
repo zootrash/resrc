@@ -35,5 +35,7 @@ http://mywiki.wooledge.org/BashGuide/Patterns
 # string manip
 http://tldp.org/LDP/abs/html/string-manipulation.html
 
+# positional params
+http://wiki.bash-hackers.org/scripting/posparams
 
 
