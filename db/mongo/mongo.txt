@@ -10,6 +10,9 @@ https://docs.mongodb.com/v3.2/tutorial/enable-authentication/
 # mongo disable transparent huge pages
 https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/
 
+# manage users and passwords
+https://docs.mongodb.com/v3.2/tutorial/manage-users-and-roles/#modify-the-password-for-an-existing-user
+
 # start server with access control for a more secured database
 $ mongod --auth --port 27017 --dbpath [dbpath]
 
