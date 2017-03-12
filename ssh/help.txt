@@ -1,0 +1,5 @@
+# log on
+ssh -p[port] [user]@linux.cs.wwu.edu
+
+# ssh through
+ssh -p[port] [user]@[room].cs.wwu.edu
